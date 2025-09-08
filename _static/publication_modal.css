@@ -1,0 +1,139 @@
+:root {
+  --modal-bg: var(--pst-color-background);
+  --modal-text: var(--pst-color-text);
+  --modal-muted: var(--pst-color-text-muted);
+  --modal-border: var(--pst-color-border);
+  --modal-link: var(--pst-color-link);
+  --modal-link-hover: var(--pst-color-link-hover);
+  --modal-shadow: rgba(0, 0, 0, 0.3);
+}
+
+/* === Modale globale === */
+.publication-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.publication-modal.show {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* === Contenu de la modale === */
+.publication-modal-content {
+  position: relative;
+  background-color: var(--modal-bg);
+  color: var(--modal-text);
+  width: 80%;
+  max-width: 800px;
+  max-height: 80vh;
+  border-radius: 12px;
+  padding: 30px;
+  overflow-y: auto;
+  box-shadow: 0 6px 30px var(--modal-shadow);
+  transform: scale(0.9);
+  transition: transform 0.3s ease;
+  border: 1px solid var(--modal-border);
+}
+
+.publication-modal.show .publication-modal-content {
+  transform: scale(1);
+}
+
+/* === Titres et sections === */
+.modal-pub-title {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 15px;
+  color: var(--modal-text);
+}
+
+.modal-pub-authors {
+  margin: 10px 0;
+  font-size: 1rem;
+  color: var(--modal-muted);
+}
+
+.modal-pub-journal,
+.modal-pub-year,
+.modal-pub-doi,
+.modal-pub-link {
+  font-size: 0.95rem;
+  color: var(--modal-muted);
+  margin-bottom: 8px;
+  font-style: italic;
+}
+
+.modal-pub-link a,
+.modal-pub-doi a {
+  color: var(--modal-link);
+  text-decoration: none;
+}
+
+.modal-pub-link a:hover,
+.modal-pub-doi a:hover {
+  text-decoration: underline;
+  color: var(--modal-link-hover);
+}
+
+/* === Description / Résumé === */
+.modal-pub-description {
+  margin-top: 25px;
+  padding-top: 15px;
+  border-top: 1px solid var(--modal-border);
+}
+
+.modal-pub-abstract {
+  font-size: 1rem;
+  line-height: 1.6;
+  text-align: justify;
+  color: var(--modal-text);
+}
+
+/* === Bouton de fermeture === */
+.close-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 32px;
+  height: 32px;
+  font-size: 26px;
+  text-align: center;
+  line-height: 32px;
+  cursor: pointer;
+  color: var(--modal-muted);
+  border-radius: 50%;
+  transition: background 0.2s, color 0.2s;
+}
+
+.close-button:hover {
+  color: var(--modal-text);
+  background-color: var(--modal-border);
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .publication-modal-content {
+    width: 90%;
+    padding: 20px;
+  }
+
+  .modal-pub-title {
+    font-size: 1.3rem;
+  }
+
+  .modal-pub-abstract {
+    font-size: 0.95rem;
+  }
+}

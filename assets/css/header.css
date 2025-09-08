@@ -1,0 +1,99 @@
+header {
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    height: 8vh;
+    padding: 0.5rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    background-color: var(--header-background-color);
+    box-sizing: border-box;
+}
+
+.header-title {
+    align-self: flex;
+    align-items: center;
+    color: var(--main-title-color);
+    a {
+        text-decoration: none;
+        color: var(--main-title-color);
+
+        .bright-acronym {
+            color: var(--main-title-color);
+            font-weight: bold;
+            font-size: 1.7em;
+        }
+
+        .bright-full {
+            color: var(--main-title-color);
+            font-weight: bold;
+            font-size: 1.3em;
+        }
+    }
+}
+
+.header-nav {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 15px;
+    width: 40%;
+    height: 80%;
+    margin-right: 0.5rem;
+
+    .header-nav-item {
+        display: flex;
+        height: 80%;
+
+        margin-top: 10px;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        white-space: nowrap;
+
+        color: var(--main-title-color);
+        text-decoration: none;
+        font-weight: bold;
+
+        .button-translation {
+            background-color: transparent;
+            border: none;
+            color: var(--main-title-color);
+            cursor: pointer;
+
+            .img-language {
+                width: 25px;
+            }
+
+        }
+    }
+
+    .nav-option {
+        cursor: pointer;
+        justify-content: center;
+        align-items: center;
+
+        .nav-link {
+            height: 80%;
+            text-decoration: none;
+            color: var(--main-title-color);
+            font-weight: bold;
+            font-size: 1.1em;
+            display: flex;
+            white-space: nowrap;
+            align-items: center;
+            margin: 5px;
+
+        }
+    }
+
+    .nav-translation {
+        margin-left: 1rem;
+    }
+
+    .nav-option:hover {
+        border-bottom: 1px solid var(--main-title-color);
+    }
+}

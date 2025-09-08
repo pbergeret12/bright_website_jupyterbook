@@ -1,0 +1,30 @@
+[
+  {
+    "image": "paper1.jpg",
+    "title": "Shared Neural Correlates of OCD and Schizophrenia",
+    "year": "2024",
+    "authors": "Clara Moreau, Pierre Bergeret",
+    "link": "https://doi.org/10.1234/abcd.5678"
+  },
+  {
+    "image": "paper2.jpg",
+    "title": "Polygenic Scores in Adolescent Psychiatry",
+    "year": "2023",
+    "authors": "Clara El Khantour et al.",
+    "link": "https://doi.org/10.2345/xyz.9012"
+  },
+  {
+    "image": "paper3.jpg",
+    "title": "Neurodevelopmental Trajectories in Autism",
+    "year": "2022",
+    "authors": "Clara Moreau, Jean Dupont",
+    "link": "https://doi.org/10.3456/uvw.3456"
+  },
+  {
+    "image": "paper4.jpg",
+    "title": "Cognitive Behavioral Therapy for Depression",
+    "year": "2021",
+    "authors": "Clara El Khantour, Marie Curie",
+    "link": "https://doi.org/10.4567/rst.7890"
+  }
+]

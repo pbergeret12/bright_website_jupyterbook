@@ -1,0 +1,188 @@
+.lab-landing {
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-image: url(../images/chu_st_justine.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.bright-logo {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color : var(--main-title-color);
+    font-size: 20px;
+
+    img {
+        margin: 20px;
+        padding: 5px;
+        width: 20rem;
+
+        background-color: white;
+        background-color: rgba(255, 255, 255, 0.6);
+    }
+}
+
+.parallax-bg {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-image: url(../images/circonvolutions.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: -1;
+}
+
+.delimiter {
+    background-color: var(--section-separator-color);
+    width: 50vw;
+    height: 2px;
+    margin: auto;
+    margin-bottom: 2rem;
+    display: block;
+}
+
+.content {
+    position: relative;
+    z-index: 1;
+    width: 65vw;
+
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .section {
+        margin-top: 2rem;
+        align-items: center;
+        text-align: center;
+        width: 90%;
+    }
+
+    .section-title {
+        text-align: center;
+        font-size: 25px;
+        color: var(--section-title-color);
+
+    }
+
+    .subsection-header {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding-left: 8%;
+
+        .subsection-title {
+            font-size: 20px;
+            color: var(--section-title-color);
+            margin-left: 10px;
+        }
+
+        .subsection-icon {
+            width: 5%;
+            margin-right: 10px;
+        }
+    }
+
+    .section-summary {
+        text-align: justify;
+        font-size: 18px;
+    }
+    .subsection-content {
+        text-align: justify;
+        font-size: 18px;
+    }
+
+    .team-list {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .funding-list {
+        p {
+            text-align: justify;
+        }
+
+        .funding-items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            .funding-item {
+                margin: 10px;
+
+                img {
+                    margin-right: 0;
+                }
+
+                &.logo-chu img {
+                    width: 25rem;
+                }
+
+                &.logo-crc img {
+                    width: 15rem;
+                }
+
+                &.logo-cihr img {
+                    width: 25rem;
+                }
+
+                &.logo-nih img {
+                    width: 25rem;
+                }
+            }
+        }
+
+
+    }
+
+    .contact-subsection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin: 2rem;
+
+        .contact-item {
+            margin-right: 4rem;
+        }
+
+        .contact-map {
+            margin-left: 4rem;
+        }
+    }
+
+    .highlight-box {
+        background-color: rgba(255, 255, 255, 0.2);
+        border-radius: 2rem;
+        padding: 2rem;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+}
+
+
+footer {
+    margin-top: 5rem;
+    margin-bottom: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

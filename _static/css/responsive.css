@@ -1,0 +1,126 @@
+@media screen and (max-width: 1500px) {
+  header {
+    height: auto; /* le header s'adapte à son contenu */
+    padding-bottom: 0.2rem;
+  }
+
+  .header-nav {
+    display: flex;
+    flex-wrap: wrap;
+    flex: 1 1 300px; /* s’étale selon la place dispo */
+    justify-content: flex-end;
+    gap: 0.3rem;
+    padding: 0;
+    margin: 0;
+    }
+
+  .header-nav-item {
+    margin: 0;
+    padding: 0;
+    flex: 0 1 auto;
+  }
+
+  .nav-link {
+    font-size: 0.9em !important;
+    padding: 0.1rem 0.3rem;
+    line-height: 1;           /* réduit l'espacement vertical réel */
+    display: inline-block;
+  }
+
+  .nav-translation {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.2rem;
+    margin-top: 0.3rem;
+  }
+
+  .img-language {
+    width: 14px;
+    height: 22px;
+  }
+
+  .header-title {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    text-align: left;
+    max-width: 100%;
+    }
+
+  .header-title {
+    flex: 1 1 300px; /* prend de l'espace, mais pas tout */
+    }
+
+  .bright-acronym {
+    font-size: 1.2em !important;
+    font-weight: bold;
+    white-space: nowrap; /* garde BRIGHT | sur une ligne */
+    margin-right: 0.3rem;
+    }
+
+  .bright-full {
+    font-size: 0.9em !important;
+    line-height: 1.2;
+    word-break: break-word;      /* permet les coupures entre mots */
+    overflow-wrap: break-word;   /* pour plus de compatibilité */
+    flex: 1 1 auto;
+    }
+
+
+
+@media screen and (max-width: 1000px) {
+  header {
+    height: auto; /* le header s'adapte à son contenu */
+    padding-bottom: 0.2rem;
+  }
+
+  .bright-acronym {
+    font-size: 1.1em !important;
+  }
+
+  .bright-full {
+    font-size: 0.9em !important;
+  }
+
+  .nav-link {
+    font-size: 0.7em !important;
+  }
+
+  .img-language {
+    width: 10px;
+    height: 18px;
+  }
+
+}
+
+
+@media screen and (max-width: 550px) {
+  header {
+    height: auto; /* le header s'adapte à son contenu */
+    padding-bottom: 0.2rem;
+  }
+
+  .bright-acronym {
+    font-size: 1.1em !important;
+  }
+
+  .bright-full {
+    font-size: 0.8em !important;
+  }
+
+  .nav-link {
+    font-size: 0.6em !important;
+  }
+
+  .img-language {
+    width: 10px;
+    height: 18px;
+  }
+
+}
+
+}
+
+
+

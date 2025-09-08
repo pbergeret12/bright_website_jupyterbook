@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bright-psy.github.io/sitemap.xml

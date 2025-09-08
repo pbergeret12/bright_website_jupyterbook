@@ -1,0 +1,15 @@
+format: jb-book
+root: intro
+
+chapters:
+  - file: research
+    title: Research
+  - file: publications
+    title: Publications
+  - file: team
+    title: Team
+  - file: news
+    title: News
+  - file: contact
+    title: Contact
+

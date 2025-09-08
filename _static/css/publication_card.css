@@ -1,0 +1,147 @@
+.publications-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+}
+
+.publication-card {
+    width: 20vw;
+    height: 25rem;
+    padding: 20px;
+    border-radius: 10%;
+    background-color: var(--publication-background-color);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.publication-title {
+    font-weight: bold;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50%;
+    margin-top: 0;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    color: var(--publication-title-color);
+}
+
+.pub-sep {
+    display: block;
+    width: 20%;
+    height: 2px;
+    background-color: var(--publication-separator-color);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.publication-authors {
+    text-align: center;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    font-size: 0.95rem;
+    color: var(--publication-data-color);
+}
+
+.pub-source {
+    margin-top: auto;
+    text-align: center;
+    font-size: 0.9rem;
+    color: var(--publication-data-color);
+    padding-bottom: 10px;
+    font-style: italic;
+}
+
+.publications-carousel-container {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    margin: 40px 0;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.publications-carousel {
+    position: relative;
+    width: 80%;
+    height: 100%;
+    perspective: 1000px;
+}
+
+.publications-list {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: transform 0.5s ease-in-out;
+}
+
+.publication-card {
+    position: absolute;
+    width: 350px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+    transform-origin: center center;
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+    backface-visibility: hidden;
+}
+
+.publication-card:hover {
+    background-color: var(--publication-background-color-hover);
+}
+
+.publication-card.active {
+    z-index: 10;
+    transform: translateX(-50%) translateY(-50%) scale(1.2);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.publication-card.prev,
+.publication-card.next {
+    opacity: 0.7;
+    transform: translateX(-50%) translateY(-50%) scale(0.8);
+}
+
+.carousel-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 40px;
+    height: 40px;
+    background-color: var(--publication-background-color);
+    color: var(--publication-data-color);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    cursor: pointer;
+    z-index: 20;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+    user-select: none;
+}
+
+.carousel-control.prev {
+    left: 10rem;
+}
+
+.carousel-control.next {
+    right: 10rem;
+}
+
+.carousel-control:hover {
+    background-color: var(--publication-background-color-hover);
+    transform: translateY(-50%) scale(1.1);
+    transition: transform 0.2s ease;
+}

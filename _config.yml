@@ -1,0 +1,16 @@
+title: BRIGHT Lab
+author: BRIGHT lab Team
+logo: _static/images/logo.png
+
+html:
+  favicon: _static/images/logo.png
+  extra_css:
+    - custom_carousel.css
+  extra_js:
+    - custom_carousel.js
+  extra_files:
+    - _static/robots.txt
+
+sphinx:
+  extra_extensions:
+    - sphinx_sitemap

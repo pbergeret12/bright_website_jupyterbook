@@ -1,0 +1,42 @@
+:root {
+    /* text color */
+    --main-title-color: white;
+    --section-title-color: rgb(0, 47, 132);
+    --publication-title-color: black;
+    --publication-data-color: #555;
+
+    --header-background-color: rgba(0, 47, 132, 0.7);
+    --section-separator-color: rgb(0, 47, 132);
+
+    --publication-background-color: #e8e8e8;
+    --publication-background-color-hover: #d0d0d0;
+    --publication-separator-color: #cccccc;
+    --publication-link-color: #0066cc;
+    --publication-close-color: #999999;
+    --publication-close-color-hover: #333;
+    --publication-close-background-color: #f0f0f0;
+
+    --team-background-color: rgba(118, 118, 118, 0.6);
+    --team-background-color-hover: rgba(118, 118, 118, 0.8);
+
+    /* fonts */
+    --title-font: 'Montserrat', sans-serif;
+
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: var(--title-font);
+    font-size: 16px;
+    position: relative;
+    overflow-x: hidden;
+}
+
+#research, #publications, #team, #funding, #recruitment, #contact {
+    scroll-margin-top: 8vh;
+}

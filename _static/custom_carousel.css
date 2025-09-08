@@ -1,0 +1,170 @@
+:root {
+  --pub-bg: var(--pst-color-surface);
+  --pub-text: var(--pst-color-text);
+  --pub-muted: var(--pst-color-text-muted);
+  --pub-border: var(--pst-color-border);
+  --pub-shadow: rgba(0, 0, 0, 0.1);
+  --pub-shadow-strong: rgba(0, 0, 0, 0.2);
+}
+
+/* === Carousel Wrapper === */
+.publications-carousel-container {
+  position: relative;
+  width: 100%;
+  min-height: 850px;
+  margin: 40px 0;
+  overflow: visible;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.publications-carousel {
+  position: relative;
+  width: 80%;
+  height: 100%;
+  perspective: 1000px;
+}
+
+.publications-list {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.5s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 800px;
+}
+
+/* === Individual Card === */
+.publication-card {
+  position: absolute;
+  width: 500px;
+  height: 700px;
+  padding: 30px;
+  border-radius: 20px;
+  background-color: var(--pub-bg);
+  box-shadow: 0 6px 25px var(--pub-shadow);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  cursor: pointer;
+  transform-origin: center center;
+  transition: all 0.5s ease-in-out;
+  backface-visibility: hidden;
+  color: var(--pub-text);
+  border: 1px solid var(--pub-border);
+}
+
+/* Active / Center / Side Cards */
+.publication-card.active {
+  z-index: 10;
+  transform: translateX(-50%) translateY(-50%) scale(1.2);
+  box-shadow: 0 10px 30px var(--pub-shadow-strong);
+}
+
+.publication-card.prev,
+.publication-card.next {
+  opacity: 0.7;
+  transform: translateX(-50%) translateY(-50%) scale(0.8);
+  z-index: 5;
+}
+
+/* Card Content */
+.publication-title {
+  font-weight: bold;
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  color: var(--pub-text);
+}
+
+.publication-authors {
+  font-size: 0.95rem;
+  color: var(--pub-muted);
+  margin-bottom: 10px;
+}
+
+.pub-source {
+  font-size: 0.85rem;
+  color: var(--pub-muted);
+  font-style: italic;
+  margin-top: auto;
+}
+
+.pub-sep {
+  display: block;
+  width: 20%;
+  height: 2px;
+  background-color: var(--pub-border);
+  margin: 8px 0;
+}
+
+/* === Carousel Arrows === */
+.carousel-control {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 45px;
+  height: 45px;
+  background-color: var(--pub-bg);
+  color: var(--pub-text);
+  border-radius: 50%;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 20;
+  box-shadow: 0 2px 5px var(--pub-shadow-strong);
+  user-select: none;
+  transition: background 0.2s ease;
+  border: 1px solid var(--pub-border);
+}
+
+.carousel-control:hover {
+  background-color: var(--pub-border);
+}
+
+.carousel-control.prev {
+  left: 5%;
+}
+
+.carousel-control.next {
+  right: 5%;
+}
+
+/* === Responsive === */
+@media (max-width: 768px) {
+  .publication-card {
+    width: 90%;
+    height: auto;
+    padding: 20px;
+  }
+
+  .publication-title {
+    font-size: 1rem;
+  }
+
+  .publication-authors,
+  .pub-source {
+    font-size: 0.9rem;
+  }
+
+  .carousel-control {
+    width: 35px;
+    height: 35px;
+    font-size: 20px;
+  }
+
+  .carousel-control.prev {
+    left: 2%;
+  }
+
+  .carousel-control.next {
+    right: 2%;
+  }
+}
