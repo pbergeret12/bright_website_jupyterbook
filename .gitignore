@@ -1,0 +1,19 @@
+# Jupyter Book
+_build/
+.jupyter_cache/
+.ipynb_checkpoints/
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Environnements (si tu en utilises)
+.venv/
+venv/
+.env
+
+# OS / éditeurs (optionnel mais pratique)
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
