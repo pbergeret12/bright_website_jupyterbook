@@ -1,15 +1,23 @@
 format: jb-book
 root: intro
 
-chapters:
-  - file: research
-    title: Research
-  - file: publications
-    title: Publications
-  - file: team
-    title: Team
-  - file: news
-    title: News
-  - file: contact
-    title: Contact
+parts:
+  - caption: Research focus
+    chapters:
+      - file: research_psychiatry
+        title: Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics
+      - file: research_neuroimaging
+        title: Harmonizing Analytical Methods in Functional Neuroimaging
+      - file: research_anorexia
+        title: Brain Trajectories and Prognosis in Anorexia Nervosa
 
+  - caption: About
+    chapters:
+      - file: publications
+        title: Publications
+      - file: team
+        title: Team
+      - file: news
+        title: News
+      - file: contact
+        title: Contact
