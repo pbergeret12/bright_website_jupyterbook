@@ -5,11 +5,15 @@ logo: _static/images/logo.png
 html:
   favicon: _static/images/logo.png
   extra_css:
+    - custom_font.css
     - custom_carousel.css
   extra_js:
     - custom_carousel.js
   extra_files:
     - _static/robots.txt
+  theme:
+    default_mode: light
+
 
 sphinx:
   extra_extensions:
