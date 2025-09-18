@@ -9,6 +9,7 @@ html:
     - custom_carousel.css
   extra_js:
     - custom_carousel.js
+    - custom_light.js
   extra_files:
     - _static/robots.txt
   theme:
@@ -22,3 +23,6 @@ sphinx:
     html_theme: sphinx_book_theme
     html_context:
       default_mode: light
+    html_theme_options :
+      navbar_end: navbar-icon-links
+
