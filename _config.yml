@@ -12,9 +12,13 @@ html:
   extra_files:
     - _static/robots.txt
   theme:
-    default_mode: light
-
+    switcher: false   # hides the light/dark button
 
 sphinx:
   extra_extensions:
     - sphinx_sitemap
+  recursive_update: true
+  config:
+    html_theme: sphinx_book_theme
+    html_context:
+      default_mode: light
