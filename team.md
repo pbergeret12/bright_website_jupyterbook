@@ -19,6 +19,6 @@ kernelspec:
 ```{raw} html
 <div id="team-root"></div>
 
-<script defer src="_static/team_data.js"></script>
-<script defer src="_static/render_team.js"></script>
+<script defer src="_static/js/team_data.js"></script>
+<script defer src="_static/js/render_team.js"></script>
 ```

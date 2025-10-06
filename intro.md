@@ -37,8 +37,6 @@ Welcome to the **BRIGHT Lab**, located at the research center of CHU Sainte-Just
 
 <img src="_static/images/logo_chu.png" alt="CHU Sainte-Justine" width="300"/>
 
-<img src="_static/images/cihr.png" alt="CIHR" width="300"/>
-
 <img src="_static/images/nih.png" alt="NIH" width="300"/>
 
 </div>

@@ -1,6 +1,8 @@
 # Toward a Dimensional Classification of Neurodevelopmental and Psychiatric Conditions Using Imaging and Genetics
 
-![fMRI](_static/images/top_down.jpeg)
+![TopDown](_static/images/top_down.jpeg)
+
+_Source_: Moreau et al., (2021). _Brain_. https://doi.org/10.1093/brain/awab096
 
 Psychiatric research has traditionally relied on a top-down approach - comparing clinically defined diagnostic groups to controls - to identify biomarkers. However, this strategy has often produced inconsistent and non-replicable findings, largely due to the substantial heterogeneity within diagnostic categories. In clinical practice, comorbidities are the norm (e.g., ADHD frequently co-occurs with autism spectrum disorder), and clinical profiles vary widely. These challenges likely reflect the complex genetic architecture of psychiatric disorders, including pleiotropy (shared genetic variants across conditions) and polygenicity (many variants contributing to a single disorder). These observations underscore the need to rethink psychiatric nosology by shifting toward biologically grounded, dimensional approaches rather than categorical symptom-based classifications.  
 

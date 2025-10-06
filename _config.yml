@@ -5,12 +5,24 @@ logo: _static/images/logo.png
 html:
   favicon: _static/images/logo.png
   extra_css:
+    - custom_font.css
     - custom_carousel.css
   extra_js:
     - custom_carousel.js
+    - custom_light.js
   extra_files:
     - _static/robots.txt
+  theme:
+    switcher: false   # hides the light/dark button
 
 sphinx:
   extra_extensions:
     - sphinx_sitemap
+  recursive_update: true
+  config:
+    html_theme: sphinx_book_theme
+    html_context:
+      default_mode: light
+    html_theme_options :
+      navbar_end: navbar-icon-links
+
