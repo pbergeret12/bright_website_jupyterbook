@@ -1,4 +1,11 @@
 const NEWS_DATA = [
+    {
+    topic: "projects",
+    date: "2025-10-23",
+    title: "Ongoing advancements in our study on restrictive eating disorders in children",
+    description: `Many thanks to the IMAGINE MRI platform at CHU Sainte-Justine for their support in setting up our longitudinal study on restrictive eating disorders in children and adolescent. We’re making great progress in preparing recruitment materials for participants. Special thanks to Dr. Pierre-Olivier Nadeau, Marie Caillaud, Nancy Aboujaoude, Clara Maria Bridi, Clara El Khantour and the communication team of Sainte-Justine.`,
+    image: "_static/images/news_imagine_mri.jpeg"
+  },
   {
     topic: "media",
     date: "2025-07-28",
