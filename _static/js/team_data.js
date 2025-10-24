@@ -33,7 +33,7 @@ window.TEAM_DATA = [
         title: "M.Sc, Ph.D. Student",
         program: "Psychiatric Sciences and Addictology",
         university: "University of Montréal",
-        image: "pbergeret.jpeg",
+        image: "pbergeret.jpg",
         links: {
           LinkedIn: "https://www.linkedin.com/in/pierrebergeret",
           GitHub: "https://github.com/pbergeret12"
