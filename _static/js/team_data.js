@@ -16,8 +16,18 @@ window.TEAM_DATA = [
     ]
   },
   {
-    section: "PhD Students",
+    section: "Students",
     members: [
+            {
+        name: "Anaël Ayrolles",
+        title: "MD, visiting Ph.D. Student",
+        university: "Robert-Debré University Hospital, Paris",
+        image: "aayrolles.jpeg",
+        links: {
+          Scholar: "https://scholar.google.com/citations?user=_nknEY4AAAAJ&hl=en&oi=ao",
+        },
+        bio: `Anaël Ayrolles is a child and adolescent psychiatrist at Robert Debré University Hospital (AP-HP, Paris), where he coordinates day-hospital and outpatient programs for early-onset eating disorders and co-leads the French National Reference Center for Early-Onset Anorexia Nervosa (CRMR-AMP). He is also a PhD student in the Human Genetics and Cognitive Functions Laboratory at the Institut Pasteur, Paris, where his research focuses on multimodal neuroimaging in childhood eating disorders and their neurodevelopmental underpinnings.`
+      },
       {
         name: "Pierre Bergeret",
         title: "M.Sc, Ph.D. Student",
