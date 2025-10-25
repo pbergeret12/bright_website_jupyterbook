@@ -1,5 +1,15 @@
 const NEWS_DATA = [
-    {
+  {
+    topic: "members",
+    date: "2025-10-24",
+    title: "Two visiting PhD students join the lab!",
+    description: `We are excited to welcome Anaël Ayrolles from Robert-Debré University Hospital and Léa Waller from Charité - Universitätsmedizin Berlin to our team as visiting PhD students for 3 months. Welcome aboard!`,
+    image: [
+      "_static/images/aayrolles.jpeg",
+      "_static/images/lwaller.jpg"
+    ]
+  },  
+  {
     topic: "projects",
     date: "2025-10-23",
     title: "Ongoing advancements in our study on restrictive eating disorders in children",
